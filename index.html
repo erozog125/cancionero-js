@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SongLab - Maqueta</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="dark.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" aria-label="Menú lateral">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">♪</div>
+        <div>
+          <h1>SongLab</h1>
+          <p>Gestor de canciones</p>
+        </div>
+      </div>
+
+      <nav class="menu" aria-label="Opciones principales">
+        <a class="active" href="#">Crear canción</a>
+        <a href="#">Buscar por nombre</a>
+        <a href="#">Buscar por autor</a>
+        <a href="#">Ordenar A-Z</a>
+        <a href="#">Eliminar canciones</a>
+      </nav>
+
+      <section class="theme-box" aria-label="Cambiar tema">
+        <p>Modo de visualización</p>
+        <div class="theme-actions">
+          <button class="theme-btn active" type="button">Light</button>
+          <button class="theme-btn" type="button">Dark</button>
+        </div>
+      </section>
+    </aside>
+
+    <div class="page">
+      <header class="header">
+        <div>
+          <p class="eyebrow">Biblioteca musical</p>
+          <h2>Crear, buscar y organizar canciones</h2>
+        </div>
+        <p class="header-help">Usa los mismos campos para crear una canción nueva o buscar una existente.</p>
+      </header>
+
+      <main class="main">
+        <section class="action-panel" aria-labelledby="form-title">
+          <div class="section-heading">
+            <h3 id="form-title">Canción</h3>
+            <p>Completa título y autor, o escribe uno de los dos datos para buscar.</p>
+          </div>
+
+          <form class="song-form">
+            <div class="field">
+              <label for="titulo">Título</label>
+              <input id="titulo" type="text" placeholder="Ej: Luna de abril" />
+            </div>
+
+            <div class="field">
+              <label for="autor">Autor</label>
+              <input id="autor" type="text" placeholder="Ej: Valeria Cruz" />
+            </div>
+
+            <div class="form-actions">
+              <button class="secondary-btn" type="button">Buscar</button>
+              <button class="primary-btn" type="button">Crear</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="library-toolbar" aria-label="Herramientas de organización">
+          <div>
+            <h3>Canciones demo</h3>
+            <p>5 canciones cargadas como datos de prueba.</p>
+          </div>
+          <button class="secondary-btn" type="button">Organizar alfabéticamente</button>
+        </section>
+
+        <section class="songs-grid" aria-label="Listado de canciones">
+          <article class="song-card">
+            <div class="song-info">
+              <span class="song-number">01</span>
+              <div>
+                <h3>Amanecer Azul</h3>
+                <p>Sofía Luna</p>
+              </div>
+            </div>
+            <button class="delete-btn" type="button">Eliminar</button>
+          </article>
+
+          <article class="song-card">
+            <div class="song-info">
+              <span class="song-number">02</span>
+              <div>
+                <h3>Brisa de Marte</h3>
+                <p>Mateo Ríos</p>
+              </div>
+            </div>
+            <button class="delete-btn" type="button">Eliminar</button>
+          </article>
+
+          <article class="song-card">
+            <div class="song-info">
+              <span class="song-number">03</span>
+              <div>
+                <h3>Café y Silencio</h3>
+                <p>Camila Torres</p>
+              </div>
+            </div>
+            <button class="delete-btn" type="button">Eliminar</button>
+          </article>
+
+          <article class="song-card">
+            <div class="song-info">
+              <span class="song-number">04</span>
+              <div>
+                <h3>Luces del Norte</h3>
+                <p>Daniel Vera</p>
+              </div>
+            </div>
+            <button class="delete-btn" type="button">Eliminar</button>
+          </article>
+
+          <article class="song-card">
+            <div class="song-info">
+              <span class="song-number">05</span>
+              <div>
+                <h3>Volver a Bailar</h3>
+                <p>Laura Méndez</p>
+              </div>
+            </div>
+            <button class="delete-btn" type="button">Eliminar</button>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Maqueta estática para taller HTML + CSS. Sin JavaScript.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
